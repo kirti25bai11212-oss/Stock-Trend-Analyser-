@@ -1,6 +1,6 @@
 # Stock Trend Viewer
 
-A simple and beginner-friendly Python project to **analyze and visualize stock price trends** using built-in sample data.
+A simple and beginner-friendly Python project to analyze and visualize stock price trends using built-in sample data.
 
 ## What This Project Does
 
@@ -11,45 +11,60 @@ This program simulates stock analysis by:
 * Computing percentage changes
 * Visualizing trends using graphs
 
-It’s designed for **students and beginners** learning Python, NumPy, and data visualization.
+It is designed for students and beginners learning Python, NumPy, and data visualization.
 
 ## Features
 
-*  Stock price trend graph
-*  Moving average (3-day)
-*  Daily price changes (absolute + %)
-*  Summary statistics (mean, max, min)
-*  No external data file needed
+* Stock price trend graph
+* Moving average (3-day)
+* Daily price changes (absolute and percentage)
+* Summary statistics (mean, max, min)
+* No external data file required
 
 ## Requirements
 
-Make sure you have **Python 3** installed.
+Make sure you have Python 3 installed.
 
 Install required libraries:
+
+```bash
 pip install numpy matplotlib
+```
 
-## Installation & Setup
 
-1. **Download or clone this repository**
+## Installation and Setup
+
+1. Clone this repository:
+
+```bash
 git clone https://github.com/your-username/stock-trend-viewer.git
 ```
 
-2. **Navigate to the project folder**
-cd stock-trend-viewer
+2. Navigate to the project folder:
 
-##  How to Run
+```bash
+cd stock-trend-viewer
+```
+
+## How to Run
 
 Run the Python script:
-python stockanalyzer.py
 
-##  How It Works
+```bash
+python stockanalyzer.py
+```
+
+## How It Works
 
 ### 1. Sample Data
 
 The program uses predefined stock prices:
-prices = [100, 102, 101, 105, 110, 108, 112, 115]
 
-You can edit these values in the code to test different scenarios.
+```python
+prices = [100, 102, 101, 105, 110, 108, 112, 115]
+```
+
+You can modify these values in the code to test different scenarios.
 
 ### 2. Analysis Performed
 
@@ -58,40 +73,38 @@ You can edit these values in the code to test different scenarios.
 * Lowest price → `np.min()`
 * Daily change → `np.diff()`
 * Percentage change → formula-based calculation
-<img width="1680" height="2990" alt="code" src="https://github.com/user-attachments/assets/5ce72689-515c-421d-88ee-6e4d777eb141" />
+
+### 3.Visualization
+   <img width="1680" height="2990" alt="code" src="https://github.com/user-attachments/assets/bf7c4aec-aaa0-4f1b-876f-72f3347efd70" />
+
+#### Stock Price Trend
+
+* Line chart with markers
+* Includes moving average
+  
+<img width="1245" height="829" alt="Screenshot 2026-03-26 224535" src="https://github.com/user-attachments/assets/24ff0655-9b68-44ab-92d5-9a0ea1a32384" />
 
 
-### 3. Visualization
+#### Daily Changes
 
-Two graphs are generated:
+* Bar chart for price changes
+* Line plot for percentage changes
 
-1. **Stock Price Trend**
+<img width="1249" height="712" alt="Screenshot 2026-03-26 224020" src="https://github.com/user-attachments/assets/7882c74b-3472-4f67-920b-a8aabfdc68b1" />
 
-   * Line chart with markers
-   * Includes moving average
-<img width="1245" height="829" alt="Screenshot 2026-03-26 224535" src="https://github.com/user-attachments/assets/84a8454b-4168-4f42-a94d-64d6e5672353" />
+# ###Terminal Output
 
-
-
-2. **Daily Changes**
-
-   * Bar chart (price changes)
-   * Line plot (percentage changes)
-<img width="1249" height="712" alt="Screenshot 2026-03-26 224020" src="https://github.com/user-attachments/assets/067b5b2b-9d3e-4c56-8d7e-9ff88896cfcf" />
-
-### Terminal Output
-<img width="985" height="269" alt="Screenshot 2026-03-27 003542" src="https://github.com/user-attachments/assets/11ba6428-99f3-4022-85e7-c25138ff35eb" />
-
-
+```
 STOCK TREND VIEWER
 
- Stock Summary:
+Stock Summary:
 Average Price: 106.62
 Highest Price: 115.00
 Lowest Price: 100.00
+```
+<img width="1112" height="368" alt="Screenshot 2026-03-26 224610" src="https://github.com/user-attachments/assets/2ccea45e-cc94-45ab-bdb2-ac72b2156164" />
 
-
-### Graphs
+## Graphs
 
 * Trend line with moving average
 * Daily fluctuations
@@ -114,7 +127,9 @@ You can easily:
 
 ## Future Improvements
 
-*  Live stock data (API integration)
-*  GUI interface
-*  Advanced indicators (RSI, MACD)
+* Live stock data using APIs
+* Graphical user interface (GUI)
+* Advanced indicators such as RSI and MACD
 * File input support
+
+
