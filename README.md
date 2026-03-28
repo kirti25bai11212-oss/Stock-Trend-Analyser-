@@ -37,7 +37,7 @@ pip install numpy matplotlib
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/stock-trend-viewer.git
+https://github.com/kirti25bai11212-oss/Stock-Trend-Analyser-
 ```
 
 2. Navigate to the project folder:
