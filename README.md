@@ -1,4 +1,4 @@
-# Stock Trend Viewer
+# Stock Trend Analyser
 
 A simple and beginner-friendly Python project to analyze and visualize stock price trends using built-in sample data.
 
