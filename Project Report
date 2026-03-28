@@ -1,0 +1,120 @@
+Stock Trend Analyzer Project Report
+1. Abstract
+
+This project presents a Stock Trend Analyzer developed using Python to analyze and visualize stock price data. The system computes key statistical metrics such as average, maximum, and minimum prices, along with daily and percentage changes. It also visualizes stock trends using line plots and moving averages, enabling better understanding of stock behavior over time.
+
+2. Introduction
+
+Stock market analysis is essential for understanding price movements and making informed financial decisions. This project focuses on building a simple yet effective tool to analyze stock price trends using numerical and graphical techniques.
+
+The analyzer processes stock data, performs statistical analysis, and generates visual insights such as trend lines and daily changes.
+
+3. Objectives
+To analyze stock price data using numerical methods
+To calculate statistical measures (mean, max, min)
+To determine daily and percentage changes
+To visualize stock trends using graphs
+To implement moving average analysis
+4. Technologies Used
+Programming Language: Python
+Libraries:
+NumPy (for numerical computations)
+Matplotlib (for data visualization)
+5. Methodology
+Step 1: Data Collection
+
+The program uses predefined sample stock price data:
+
+[100, 102, 101, 105, 110, 108, 112, 115]
+Step 2: Data Processing
+
+The data is converted into a NumPy array for efficient computation.
+
+Step 3: Statistical Analysis
+
+The following metrics are calculated:
+
+Average price using mean
+Maximum price
+Minimum price
+Step 4: Trend Analysis
+Daily price changes are calculated using difference between consecutive values
+Percentage changes are computed to measure relative variation
+Step 5: Visualization
+
+Two types of graphs are generated:
+
+Stock Price Trend Graph
+Daily Changes Graph
+6. System Architecture
+
+Input Layer:
+
+Predefined stock price dataset
+
+Processing Layer:
+
+NumPy-based computations
+Trend analysis calculations
+
+Output Layer:
+
+Printed statistical summary
+Graphical visualizations using Matplotlib
+7. Implementation Details
+7.1 Data Loading
+
+The load_data() function returns sample stock prices as a NumPy array.
+
+7.2 Analysis Function
+
+The analyze() function performs:
+
+Mean calculation
+Maximum and minimum detection
+Daily change computation using np.diff()
+Percentage change calculation
+7.3 Visualization Functions
+Plot 1: Stock Prices
+Displays price trend using a line graph
+Includes markers for each data point
+Calculates and plots moving average using convolution
+Uses a default window size of 3 days
+Plot 2: Daily Changes
+Bar chart for daily price changes
+Line plot for percentage changes
+Combined visualization improves interpretation
+7.4 Main Function
+Calls all functions in sequence
+Displays summary output
+Shows graphs using plt.show()
+8. Results
+
+The program successfully:
+
+Computes statistical metrics
+Identifies price fluctuations
+Displays trends visually
+Highlights short-term trends using moving averages
+
+The graphs provide clear insights into stock movement patterns.
+
+9. Advantages
+Simple and easy to understand
+Efficient numerical computation using NumPy
+Clear graphical representation
+No external data dependency
+10. Limitations
+Uses static sample data (no real-time data)
+Limited to basic analysis techniques
+Small dataset size
+No predictive modeling
+11. Future Scope
+Integration with real-time stock APIs
+Use of machine learning for prediction
+Addition of advanced indicators (RSI, MACD)
+Development of a web-based dashboard
+Support for multiple stocks comparison
+12. Conclusion
+
+The Stock Trend Analyzer demonstrates how Python can be used for financial data analysis and visualization. It effectively combines statistical computation and graphical representation to provide meaningful insights into stock price behavior.
